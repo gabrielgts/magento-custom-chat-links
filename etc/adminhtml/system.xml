@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="gtstudio" translate="label" sortOrder="999">
+			<label>gtstudio</label>
+		</tab>
+		<section id="custom_chat_links" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+			<label>custom_chat_links</label>
+			<tab>gtstudio</tab>
+			<resource>Gtstudio_ChatLinks::config_gtstudio_chatlinks</resource>
+			<group id="general" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>general</label>
+				<field id="enabled" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>enabled</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+				<field id="message" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>message</label>
+					<comment/>
+				</field>
+			</group>
+			<group id="whatsapp" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>whatsapp</label>
+				<field id="user" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>telephone</label>
+					<comment/>
+				</field>
+				<field id="active" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>active</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+			<group id="telegran" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+				<label>telegran</label>
+				<field id="user" type="text" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>user</label>
+					<comment/>
+				</field>
+				<field id="active" type="select" sortOrder="10" showInWebsite="1" showInStore="1" showInDefault="1" translate="label">
+					<label>active</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

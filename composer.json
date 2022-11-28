@@ -1,0 +1,21 @@
+{
+    "name": "gtstudio/module-chatlinks",
+    "description": "This module adds custom chat links for whatsapp Telegran and othes.",
+    "type": "magento2-module",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Gabriel",
+            "email": "gabrielt.gts@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Gtstudio\\ChatLinks\\": ""
+        }
+    }
+}

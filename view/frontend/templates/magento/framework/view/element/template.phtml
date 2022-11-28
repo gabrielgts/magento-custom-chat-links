@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @var $block \Gtstudio\ChatLinks\Block\Magento\Framework\View\Element\Template
+ */
+
+if (!$block->isEnabled()) return;
+
+$chats = ['whatsapp', 'telegran'];
+
+?>
+
+<div id="social-media-buttons" class="social-media-buttons">
+    <?php foreach ($chats as $key => $chat) : ?>
+        <?php if(!$block->isActive($chat)) continue; ?>
+        <div class="<?= $chat ?>">
+            <a href="<?= $block->getChatUrl($chat) ?>" target="_blank" rel="noopener noreferrer" class="btn">
+                <img src="<?= $block->getViewFileUrl("Gtstudio_ChatLinks::images/{$chat}.svg") ?>" alt="<?= __('Whats App Message') ?>" class="icon">
+            </a>
+        </div>
+    <?php endforeach ?>
+</div>

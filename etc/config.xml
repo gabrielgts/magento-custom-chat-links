@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<custom_chat_links>
+			<general>
+				<enabled/>
+				<message/>
+			</general>
+			<whatsapp>
+				<telephone/>
+				<active/>
+			</whatsapp>
+			<telegran>
+				<user/>
+				<active/>
+			</telegran>
+		</custom_chat_links>
+	</default>
+</config>
